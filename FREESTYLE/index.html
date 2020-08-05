@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form" onsubmit="return validate()">
+      <input type="text" name="name" placeholder="Name" />
+      <br />
+
+      <input type="submit" value="register" />
+    </form>
+    <script>
+      function validate() {
+          
+        var name = document.form.name.value;
+        
+
+        if (name == null || name == "") {
+          alert("field can't be empty");
+          return false;
+        }
+         
+         else {
+          alert("input validated");
+        }
+      }
+    </script>
+  </body>
+</html>
